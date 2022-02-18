@@ -4,8 +4,7 @@
 set history=1000                " Save more commands
 set autoread                    " Read file when changed externally
 set autowrite                   " Automatically save before commands like :next and :make
-" :Ws sudo saves file
-command Ws w !sudo tee % > /dev/null
+"command W w !sudo tee % > /dev/null     " sudo save file
 set noswapfile                  " No more .swp!
 
 " Ensure options work with the Vim-related packages available in Debian.
