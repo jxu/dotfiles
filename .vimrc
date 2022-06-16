@@ -112,4 +112,4 @@ let g:syntastic_python_checkers=["flake8"]
 " https://pycodestyle.readthedocs.io/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args="--ignore=E127,E128,E2,E3,E7,W2,W3"
 
-let g:clang_library_path='/usr/lib/llvm-6.0/lib'
+let g:clang_library_path='/usr/lib/llvm-10/lib'
