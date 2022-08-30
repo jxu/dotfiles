@@ -92,6 +92,7 @@ Plugin 'justinmk/vim-syntax-extra'
 Plugin 'pangloss/vim-javascript'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'xavierd/clang_complete'
+Plugin 'sukima/xmledit'
 call vundle#end()
 filetype plugin indent on       " Filetype plugins
 
