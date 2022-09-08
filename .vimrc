@@ -53,7 +53,7 @@ set lbr                         " Visual word wrapping at `breakat`
 "set tw=500                     " Linebreak on 500 characters
 
 set autoindent
-"set smartindent                " Disabled because typing '#' unindents
+set smartindent
 set wrap
 
 
@@ -77,7 +77,7 @@ map <C-n> :NERDTreeToggle<CR>   " Open NERDTree with Ctrl-n
 
 
 " => Use Vundle, Vim plug-in manager
-"set nocompatible  " Disabled since resets whichwrap
+set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
