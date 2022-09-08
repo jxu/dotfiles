@@ -1,14 +1,15 @@
-" Custom vim config with my comments (Mostly from the ultimate Vim config amix/vimrc)
+" Custom vim config with my comments 
+" (mostly from the ultimate Vim config amix/vimrc)
 
 " => General
-set history=1000                " Save more commands
-set autoread                    " Read file when changed externally
-set autowrite                   " Automatically save before commands like :next and :make
-"command W w !sudo tee % > /dev/null     " sudo save file
-set noswapfile                  " No more .swp!
+set history=1000                        " Save more commands
+set autoread                            " Read file when changed externally
+set autowrite                           " Autosave before commands like :make
+"command W w !sudo tee % > /dev/null    " sudo save file
+set noswapfile                          " No more .swp!
 
 " Ensure options work with the Vim-related packages available in Debian.
-runtime! debian.vim
+runtime! debian.vim 
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -31,7 +32,7 @@ set incsearch                   " Show search terms as you type
 set lazyredraw                  " Don't redraw while executing macros
 set magic                       " Magic on for regex
 set showmatch                   " Show matching brackets
-"set mat=2                      " Tenths of a second to blink when matching brackets
+"set mat=2                      " Tenths sec to blink when matching brackets
 "set foldcolumn=0               " Extra margin on left size
 set mouse=a                     " Enable mouse usage (all modes)
 set number                      " Show line numbers
@@ -40,7 +41,7 @@ set number                      " Show line numbers
 
 " => Colors and Fonts
 syntax on                       " Syntax highlighting
-set encoding=utf8               " utf8 standard encoding, en_US standard language
+set encoding=utf8               " utf8 standard encoding
 set t_Co=256                    " Enable 256 terminal colors
 
 
@@ -53,17 +54,16 @@ set lbr                         " Visual word wrapping at `breakat`
 "set tw=500                     " Linebreak on 500 characters
 
 set autoindent
-"set smartindent                " Disabled because typing '#' unindents (and other)
+"set smartindent                " Disabled because typing '#' unindents
 set wrap
 
 
 " => Moving around
-"map j gj                       " Treat long lines as break lines
+"map j gj                           " Treat long lines as break lines
 "map k gk
-"map <space> /                  " Map Space to search
-map <c-space> ?                 " Map Ctrl-Space to backwards search
-" Ctrl-Left and Ctrl-Right to switch tabs
-nnoremap <C-Left> :tabprevious<CR>
+"map <space> /                      " Map Space to search
+map <c-space> ?                     " Map Ctrl-Space to backwards search
+nnoremap <C-Left> :tabprevious<CR>  " Ctrl-Left, Ctrl-Right to switch tabs
 nnoremap <C-Right> :tabnext<CR>
 
 
@@ -111,3 +111,4 @@ let g:syntastic_python_checkers=["flake8"]
 let g:syntastic_python_flake8_args="--ignore=E127,E128,E2,E3,E7,W2,W3"
 
 let g:clang_library_path='/usr/lib/llvm-10/lib'
+
