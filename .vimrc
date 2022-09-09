@@ -53,9 +53,14 @@ set wrap
 
 
 " => Moving around
-"map j gj                           " Treat long lines as break lines
-"map k gk
-nnoremap <C-Left> :tabprevious<CR>  " Ctrl-Left, Ctrl-Right to switch tabs
+" Navigate long lines as display lines
+nnoremap j gj
+nnoremap k gk
+nnoremap <Up> g<Up>
+nnoremap <Down> g<Down>
+
+" Ctrl-Left, Ctrl-Right to switch tabs
+nnoremap <C-Left> :tabprev<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 
