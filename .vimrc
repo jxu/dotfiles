@@ -2,10 +2,10 @@
 " (mostly from the ultimate Vim config amix/vimrc)
 
 " => General
-set history=1000                        " Save more commands
-set autoread                            " Read file when changed externally
-set autowrite                           " Autosave before commands like :make
-set noswapfile                          " No more .swp!
+set history=1000                " Save more commands
+set autoread                    " Read file when changed externally
+set autowrite                   " Autosave before commands like :make
+set noswapfile                  " No more .swp!
 
 " Ensure options work with the Vim-related packages available in Debian.
 runtime! debian.vim 
