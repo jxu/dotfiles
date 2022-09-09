@@ -17,10 +17,8 @@ endif
 
 
 " => VIM UI
-"set so=7                       " Lines above/below cursor when scrolling
 set wildmenu                    " Command line completion
 set ruler                       " Show current position
-"set cmdheight=2                " Height of command bar
 set hidden                      " Hide buffers when they are abandoned
 set backspace=indent,eol,start  " Sane backspace
 set whichwrap+=<,>,h,l,[,]      " Backspace wrap
@@ -31,11 +29,8 @@ set incsearch                   " Show search terms as you type
 set lazyredraw                  " Don't redraw while executing macros
 set magic                       " Magic on for regex
 set showmatch                   " Show matching brackets
-"set mat=2                      " Tenths sec to blink when matching brackets
-"set foldcolumn=0               " Extra margin on left size
 set mouse=a                     " Enable mouse usage (all modes)
 set number                      " Show line numbers
-"let loaded_matchparen = 1      " Disable highlighting matching parens
 
 
 " => Colors and Fonts
@@ -60,20 +55,16 @@ set wrap
 " => Moving around
 "map j gj                           " Treat long lines as break lines
 "map k gk
-"map <space> /                      " Map Space to search
-map <c-space> ?                     " Map Ctrl-Space to backwards search
 nnoremap <C-Left> :tabprevious<CR>  " Ctrl-Left, Ctrl-Right to switch tabs
 nnoremap <C-Right> :tabnext<CR>
 
 
 " => Status line
 set laststatus=2                " Always show status line
-set showcmd                     " Show (partial) command in status line
 
 
 " => Shortcuts
 set pastetoggle=<F9>            " Toggle paste mode (turn off autoindent)
-map <C-n> :NERDTreeToggle<CR>   " Open NERDTree with Ctrl-n
 
 
 " => Use Vundle, Vim plug-in manager
