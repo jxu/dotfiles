@@ -7,14 +7,6 @@ set autoread                    " Read file when changed externally
 set autowrite                   " Autosave before commands like :make
 set noswapfile                  " No more .swp!
 
-" Ensure options work with the Vim-related packages available in Debian.
-runtime! debian.vim 
-
-" Source a global configuration file if available
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
-
 
 " => VIM UI
 set wildmenu                    " Command line completion
