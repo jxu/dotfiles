@@ -23,6 +23,7 @@ set magic                       " Magic on for regex
 set showmatch                   " Show matching brackets
 set mouse=a                     " Enable mouse usage (all modes)
 set number                      " Show line numbers
+set laststatus=2                " Always show status line
 
 
 " => Colors and Fonts
@@ -54,10 +55,6 @@ nnoremap <Down> g<Down>
 " Ctrl-Left, Ctrl-Right to switch tabs
 nnoremap <C-Left> :tabprev<CR>
 nnoremap <C-Right> :tabnext<CR>
-
-
-" => Status line
-set laststatus=2                " Always show status line
 
 
 " => Shortcuts
