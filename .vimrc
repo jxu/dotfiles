@@ -12,10 +12,8 @@ set noswapfile                  " No more .swp!
 set wildmenu                    " Command line completion
 set ruler                       " Show current position
 set hidden                      " Hide buffers when they are abandoned
-set backspace=indent,eol,start  " Sane backspace
-set whichwrap+=<,>,h,l,[,]      " Backspace wrap
-set ignorecase                  " Do case insensitive matching
-set smartcase                   " Do smart case matching
+set ignorecase                  " Case insensitive matching
+set smartcase                   " Smart case matching
 set hlsearch                    " Highlight search results
 set incsearch                   " Show search terms as you type
 set lazyredraw                  " Don't redraw while executing macros
@@ -34,18 +32,19 @@ set t_Co=256                    " Enable 256 terminal colors
 
 " => Text, tab, and indent related
 set expandtab                   " Uses spaces for tabs
-set smarttab
 set tabstop=4                   " Tab 4 columns
 set shiftwidth=4                " Reindent 4 columns
-set lbr                         " Visual word wrapping at `breakat`
-set tw=0                        " Hardwrap at n characters (0 to disable)
-
-set autoindent
-set smartindent
-set wrap
+set linebreak                   " Soft wrap at `breakat` characters
+set wrap                        " Soft wrap at edge of window
+set textwidth=0                 " Hard wrap at n characters (0 to disable)
+set autoindent                  " Indent from previous line
+set smartindent                 " Syntax indent
 
 
 " => Moving around
+set backspace=indent,eol,start  " Sane backspace
+set whichwrap+=<,>,h,l,[,]      " Movement wrap between lines
+
 " Navigate long lines as display lines
 nnoremap j gj
 nnoremap k gk
