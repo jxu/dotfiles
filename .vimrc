@@ -38,7 +38,7 @@ set smarttab
 set tabstop=4                   " Tab 4 columns
 set shiftwidth=4                " Reindent 4 columns
 set lbr                         " Visual word wrapping at `breakat`
-"set tw=500                     " Linebreak on 500 characters
+set tw=0                        " Hardwrap at n characters (0 to disable)
 
 set autoindent
 set smartindent
