@@ -2,6 +2,7 @@
 " (mostly from the ultimate Vim config amix/vimrc)
 
 " => General
+set nocompatible                " Disable compatibility mode
 set history=1000                " Save more commands
 set autoread                    " Read file when changed externally
 set autowrite                   " Autosave before commands like :make
@@ -61,7 +62,6 @@ set pastetoggle=<F9>            " Toggle paste mode (turn off autoindent)
 
 
 " => Use Vundle, Vim plug-in manager
-set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
