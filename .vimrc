@@ -68,14 +68,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'pangloss/vim-javascript'
 Plugin 'patstockwell/vim-monokai-tasty'
-Plugin 'xavierd/clang_complete'
 Plugin 'sukima/xmledit'
 call vundle#end()
 filetype plugin indent on       " Filetype plugins
